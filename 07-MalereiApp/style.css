@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Doto:wght@100;200;300;400;500;600;700;800;900&family=Edu+AU+VIC+WA+NT+Pre:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #4a98f7;
+}
+.container {
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 8px 0px;
+}
+.tools-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 15px;
+}
+.tools{
+    display: flex; /*Eraser,Brush,choose Color , Range werden in eine Linie eingeordnet.*/
+    color: darkslategray;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+.color{
+    display: flex;
+    align-items: center;
+}
+input[type="color"]{
+    border: none;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    cursor: pointer;    
+}
+/*              
+فضای داخلی اطراف سواچ بمعنی "نمونه رنگ" را حذف می‌کند.
+*/
+input[type="color"]::-webkit-color-swatch-wrapper{
+    padding: 0;
+}
+
+
+/*
+کد زیر به قسمت "سواچ" (مربع رنگ انتخاب شده) یک حاشیه (بوردر) با ضخامت ۵ پیکسل و رنگ طلایی اضافه می‌کند
+*/
+input[type="color"]::-webkit-color-swatch{
+    border: 5px solid gold;
+}
+label ,i{
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.buttons button{
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.buttons .save{
+    
+    background: #4a98f7;
+    color: #fff;
+}
+.buttons .clear:hover{
+    background-color: lightgrey;
+}
+.draw-area canvas{
+    width: 100%;
+    height: 450px;  
+}
+
+/*die Farbe von Brush auf Blau gesetzt,die wir mit JavaScript ändern werden.*/
+.active{
+    color: #4a98f7;
+}

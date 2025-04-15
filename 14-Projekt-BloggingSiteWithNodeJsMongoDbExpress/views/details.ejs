@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="details content">
+      <h2><%= blog.title %></h2>
+      <div class="content">
+        <p><%= blog.body %></p>
+      </div>
+      <a class="delete" data-doc="<%= blog._id %>">Delete</a>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+
+    <script>
+      //Ein bestimmtes Blog oder Dokument durch einen Routenparameter löschen
+      const trashDoc = document.querySelector("a.delete");
+      trashDoc.addEventListener("click", (e) => {
+        const endPoint = `/blogs/${trashDoc.dataset.doc}`;
+        //Ajax Req beginnt
+        fetch(endPoint, {
+          method: "DELETE"
+        })
+          .then((response) => response.json())
+          .then((data) => (window.location.href = data.redirect))
+          .catch((err) => console.log(err));
+      });
+      //Ajax Req beendet
+    </script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: rgb(116, 150, 14);
+}
+.container{
+    width: 450px;    
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding:30px;
+
+}
+.container .info h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container form{
+    margin: 15px 0 25px;
+}
+.container form :where(input , button){
+    outline: 0;
+    border: 0;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 18px;
+}
+.container form input{
+    border: 1px solid #999;
+}
+.container form button{
+    background-color: rgb(116, 150, 14);
+    color: antiquewhite
+    
+}
+.container form input:hover{
+    color: gold;    
+    background-color: #999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* سایه اطراف دکمه */
+    transform: scale(1.1);  /* افزایش اندازه دکمه */
+    border-radius: 20px;  /* تغییر شکل گوشه‌ها */
+    border: 2px solid gold;  /* اضافه کردن مرز */   
+    opacity: 0.8;  /* کمرنگ‌تر کردن دکمه */
+    font-weight: bold;  /* تغییر وزن فونت */
+    font-size: 18px;  /* تغییر اندازه فونت */    
+}
+.container form button:hover{
+    color: gold;
+    background-color: #999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* سایه اطراف دکمه */
+    transform: scale(1.1);  /* افزایش اندازه دکمه */
+    border-radius: 20px;  /* تغییر شکل گوشه‌ها */
+    border: 2px solid rgb(9, 8, 2);  /* اضافه کردن مرز */   
+    opacity: 0.8;  /* کمرنگ‌تر کردن دکمه */   
+    font-weight: bold;  /* تغییر وزن فونت */
+    font-size: 18px;  /* تغییر اندازه فونت */    
+  }
+.container .qr-Code{
+    border: 1px solid #999;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.hidden{
+    display: none;
+}
+
+

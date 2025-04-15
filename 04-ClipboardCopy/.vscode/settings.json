@@ -1,0 +1,7 @@
+{
+    "prettier.enable": true,
+    "prettier.requireConfig": true,
+    "terminal.integrated.commandsToSkipShell": [
+        " \"editor.defaultFormatter\": \"esbenp.prettier-vscode\""
+    ]
+}

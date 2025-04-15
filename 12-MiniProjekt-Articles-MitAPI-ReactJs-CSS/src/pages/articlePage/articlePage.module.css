@@ -1,0 +1,36 @@
+.aboutPage {
+    text-align: center;
+}
+.articleWrapper{
+    text-align: center;
+}
+.articleWrapper h1{
+    text-align: left;
+    color: rgb(138, 121, 221);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.articleWrapper img{
+    width: 50%;
+    height: 70%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.articleWrapper p{
+    text-align: left;
+    color: #777;
+    line-height: 1;
+}
+.articleInfo{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+
+}
+.articleInfo span{
+    margin-left: 10px;
+    color: #777;
+}
+
+

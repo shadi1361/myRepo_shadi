@@ -1,0 +1,67 @@
+{
+    "articles":{
+        "status":true,
+        "message": "successfull",
+        "data":[
+            {
+                "id": 1,
+                "imageUrl": "",
+                "title": "title 1",
+                "readingTime": 5
+            },
+            {
+                "id": 2,
+                "imageUrl":"",
+                "title": "title 2",
+                "readingTime":7
+            },
+            {
+                "id":3,
+                "imageUrl":"",
+                "title":"title 3",
+                "readingTime" : 10
+            },
+            {
+                "id":4,
+                "imageUrl":"",
+                "titl":"title 4",
+                "readingTime" :6
+            }        
+    ]
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

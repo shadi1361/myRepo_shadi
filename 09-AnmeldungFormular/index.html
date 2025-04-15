@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link rel="stylesheet" href="styles/style.css" />
+        <title>Login und Anmeldung</title>
+    </head>
+    <body>
+        <div class="container" id="container">
+            <!--CONTAINER-->
+            <div class="form-container log-in-container">
+                <!--LOGIN CONTAINER-->
+                <form action="#">
+                    <h1>Login zum Web</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <span>Verwenden Sie Ihr Benutzerkonto</span>
+                    <input type="email" placeholder="E-Mail eingeben" />
+                    <input type="password" placeholder="Passwort eingeben" />
+                    <a href="#">Benutzername vergessen</a>
+                    <button>Einloggen</button>
+                </form>
+            </div>
+            <!--SIGN UP CONTAINER-->
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Benutzerkonto erstellen</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <span>Oder registrieren Sie sich mit Ihrer E-Mail</span>
+                    <input type="text" placeholder="Vorname und Nachname" />
+                    <input type="email" placeholder="E-Mail" />
+                    <input type="password" placeholder="Passwort" />
+                    <button>Registrieren</button>
+                </form>
+            </div>
+            <!-- OVERLAY Container-->
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-right">
+                        <h1>Willkommen Webentwickler</h1>
+                        <p>Geben Sie Ihre persönlichen Daten ein</p>
+                        <button class="ghost" id="signUp">Registrieren</button>
+                    </div>
+
+                    <div class="overlay-panel overlay-left">
+                        <h1>Willkommen</h1>
+                        <p>Bitte geben Sie Ihre Informationen ein, um sich einzuloggen</p>
+                        <button class="ghost" id="logIn">Einloggen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

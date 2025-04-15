@@ -1,0 +1,39 @@
+.aboutPage {
+    text-align: center;
+}
+
+.aboutPage h3 {
+    margin: 40px 0;
+    text-align: left;
+    color: rgb(35, 10, 104);
+}
+
+h4 {
+    color: red;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+
+.aboutPage p {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+img {
+    display: block;
+    margin: 20px auto; /* Center the image horizontally */
+    width: 1000px;
+    height: 500px;
+}
+
+.mapContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.inputMargin {
+    margin-bottom: 30px;
+}
+

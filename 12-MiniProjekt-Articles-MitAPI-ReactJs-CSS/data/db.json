@@ -1,0 +1,76 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "imageUrl": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29kaW5nJTIwaW1hZ2VzfGVufDB8fDB8fHww",
+      "title": "teitle 1",
+      "readingTime": 40,
+      "autor": "Bjarne Stroustrup",
+      "date": "01.08.2011",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias ea perspiciatis omnis, veritatis illum cupiditate nostrum? Numquam veritatis ullam pariatur nobis quidem quasi. Reprehenderit sunt voluptatibus impedit exercitationem omnis."
+    },
+    {
+      "id": "2",
+      "imageUrl": "https://images.unsplash.com/photo-1499673610122-01c7122c5dcb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvZGluZyUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D",
+      "title": "teitle 2",
+      "readingTime": 70,
+      "autor": "Robert C. Martin",
+      "date": "01.11.2014",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias ea perspiciatis omnis, veritatis illum cupiditate nostrum? Numquam veritatis ullam pariatur nobis quidem quasi. Reprehenderit sunt voluptatibus impedit exercitationem omnis."
+    },
+    {
+      "id": "3",
+      "imageUrl": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGNvZGluZyUyMGltYWdlcyUyMDIwMHB4KiUyMDMwMHB4fGVufDB8fDB8fHww",
+      "title": "teitle 3",
+      "readingTime": 45,
+      "autor": "Martin Fowler",
+      "date": "01.11.2021",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias ea perspiciatis omnis, veritatis illum cupiditate nostrum? Numquam veritatis ullam pariatur nobis quidem quasi. Reprehenderit sunt voluptatibus impedit exercitationem omnis."
+    },
+    {
+      "id": "4",
+      "imageUrl": "https://images.unsplash.com/photo-1483817101829-339b08e8d83f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvZGluZyUyMGltYWdlcyUyMDIwMHB4KiUyMDMwMHB4fGVufDB8fDB8fHww",
+      "title": "teitle 4",
+      "readingTime": 80,
+      "autor": "Edsger W. Dijkstra",
+      "date": "04.07.2021",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias ea perspiciatis omnis, veritatis illum cupiditate nostrum? Numquam veritatis ullam pariatur nobis quidem quasi. Reprehenderit sunt voluptatibus impedit exercitationem omnis."
+    },
+    {
+      "id": "5",
+      "imageUrl": "https://images.unsplash.com/photo-1483817101829-339b08e8d83f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvZGluZyUyMGltYWdlcyUyMDIwMHB4KiUyMDMwMHB4fGVufDB8fDB8fHww",
+      "title": "teitle 5",
+      "readingTime": 55,
+      "autor": "Joel Spolsky ",
+      "date": "06.03.2015",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias ea perspiciatis omnis, veritatis illum cupiditate nostrum? Numquam veritatis ullam pariatur nobis quidem quasi. Reprehenderit sunt voluptatibus impedit exercitationem omnis."
+    },
+    {
+      "id": "6",
+      "imageUrl": "https://images.unsplash.com/photo-1517512006864-7edc3b933137?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGNvZGluZyUyMGltYWdlcyUyMDIwMHB4KiUyMDMwMHB4fGVufDB8fDB8fHww",
+      "title": "teitle 6",
+      "readingTime": 90,
+      "autor": "Herb Sutter",
+      "date": "30.08.2019",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias ea perspiciatis omnis, veritatis illum cupiditate nostrum? Numquam veritatis ullam pariatur nobis quid#em quasi. Reprehenderit sunt voluptatibus impedit exercitationem omnis."
+    },
+    {
+      "id": "7",
+      "imageUrl": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGluZyUyMGltYWdlcyUyMDIwMHB4KiUyMDMwMHB4fGVufDB8fDB8fHww",
+      "title": "teitle 7",
+      "readingTime": 35,
+      "autor": "Charles Petzold",
+      "date": "4.03.2016",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias ea perspiciatis omnis, veritatis illum cupiditate nostrum? Numquam veritatis ullam pariatur nobis quidem quasi. Reprehenderit sunt voluptatibus impedit exercitationem omnis."
+    },
+    {
+      "id": "8",
+      "imageUrl": "https://images.unsplash.com/photo-1517512006864-7edc3b933137?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGNvZGluZyUyMGltYWdlcyUyMDIwMHB4KiUyMDMwMHB4fGVufDB8fDB8fHww",
+      "title": "teitle 8",
+      "readingTime": 40,
+      "autor": "David Thomas",
+      "date": "01.05.2014",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias ea perspiciatis omnis, veritatis illum cupiditate nostrum? Numquam veritatis ullam pariatur nobis quidem quasi. Reprehenderit sunt voluptatibus impedit exercitationem omnis."
+    }
+  ]
+}

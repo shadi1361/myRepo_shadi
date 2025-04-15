@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+  <%- include('./partials/head.ejs') %>
+
+  <style>
+    body {
+      font-family: "Noto Serif", serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .create-blog form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .create-blog label {
+      margin-top: 10px;
+    }
+
+    .create-blog input,
+    .create-blog textarea {
+      margin-top: 5px;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .create-blog button {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 1em;
+      background-color: #535653;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .create-blog button:hover {
+      background-color: #777;
+    }
+  </style>
+
+  <body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="create-blog content">
+      <form action="/blogs" method="post">
+        <label for="title">Blog title</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="snippet">Snippet</label>
+        <input type="text" id="snippet" name="snippet" required />
+
+        <label for="body">Body</label>
+        <textarea id="body" name="body" required></textarea>
+
+        <button type="submit">Create Blog</button>
+      </form>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

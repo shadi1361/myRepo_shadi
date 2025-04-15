@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #444;
+  }
+
+  body {
+    font-family: 'Noto Serif', serif;
+
+  }
+
+  /* Typography */
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  .hcolor{
+      color: #777;
+  }
+
+
+  h3 {
+    text-transform: capitalize;
+    margin-bottom: 9px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  /* Navigation */
+  nav {
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav li {
+    list-style-type: none;
+    margin-left: 12px;
+
+  }
+
+  nav h1 {
+    font-size: 3em;
+  }
+
+  nav p,
+  nav a {
+    color: #777;
+    font-weight: 300;
+  }
+
+  /* Footer */
+  footer {
+    color: #777;
+    text-align: center;
+    margin: 80px auto 20px;
+  }
+
+/*index styles*/
+.blogs a{
+  display: block;
+  margin: 40px 0;
+  padding-left: 30px;
+  border-left: 6px solid #777;
+  text-decoration: none;
+}
+
+.blogs a:hover h3{
+  color:rgb(201, 174, 22) ; ;
+}
+
+  /* Content Section */
+  .content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+  }
+
+  /* details styles */
+  .details {
+    position: relative;
+  }
+
+  .delete{
+    position: absolute; /* Change to absolute to position it relative to the parent */
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    padding: 8px;
+    margin-top: 17px;
+
+  }
+  .delete:hover{
+    cursor:pointer;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .create-blog {
+    max-width: 800px;
+  }
+
+  .create-blog form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .create-blog label {
+    margin-top: 10px;
+  }
+
+  .create-blog input,
+  .create-blog textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .create-blog button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+

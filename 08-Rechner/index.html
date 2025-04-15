@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rechner</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body,
+            html {
+                height: 100%;
+            }
+            form {
+                background: #3a3d36;
+                width: 245px;
+                border-radius: 10px;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(
+                    -50%,
+                    -50%
+                ); /* به اندازه عرض و ارتفاع خود ماشینحساب اونو ببالاو چپ برمیگردونیم*/
+                /*
+            برای جابجایی یک عنصر در CSS استفاده می‌شود و هدف آن انتقال عنصر به میزان ۵۰٪ از عرض و ارتفاع خود است.
+
+            اما اگر بخواهید آن را "تریس" (یا تحلیل) کنید، این تغییرات به شرح زیر است:
+
+            translate(-50%, -50%): این دستور به عنصر می‌گوید که در محور افقی (X) و عمودی (Y) به اندازه ۵۰٪ از ابعاد خود جابجا شود.
+            -50% در محور افقی یعنی جابجایی به اندازه نیمی از عرض عنصر به سمت چپ.
+            -50% در محور عمودی یعنی جابجایی به اندازه نیمی از ارتفاع عنصر به سمت بالا.
+            به این ترتیب، این تکنیک بسیار مفید برای مرکزی کردن عناصر به‌خصوص در طراحی‌های ریسپانسیو است
+            */
+            }
+            input[name='display'] {
+                background-color: hsl(105, 15%, 95%);
+                height: 40px;
+                text-align: right;
+                border-radius: 8px;
+                margin: 5px;
+                width: calc(100%-30px);
+                border: none;
+                padding: 0px 10px;
+            }
+            input[type='button'] {
+                float: left;
+                width: calc(100% / 4 - 6.5px);
+                background: hsl(90, 1%, 62%);
+                border-radius: 8px;
+                height: 36px;
+                text-align: center;
+                margin: 0 0 5px 5px;
+                border: none;
+                color: #fff;
+            }
+
+            input[type='button']:nth-last-of-type(1) {
+                background: orange;
+                width: calc(50% - 8.5px);
+            }
+        </style>
+        <script>
+            function data(val) {
+                calc.display.value += val;
+            }
+            function ac() {
+                calc.display.value = '';
+            }
+            function c() {
+                calc.display.value = calc.display.value.slice(0, -1);
+            }
+            function equal() {
+                calc.display.value = eval(calc.display.value); // یه تابع هست که یه مقدار استرینگ دریافت میکنه و عملیات ریاضی روی اون انجام میده و مقدار را برمیگردانه
+            }
+        </script>
+    </head>
+    <body>
+        <form name="calc">
+            <input type="text" disabled value="" name="display" />
+            <input type="button" value="AC" onclick="ac()" />
+            <input type="button" value="C" onclick="c()" />
+            <input type="button" value="%" onclick="data(this.value)" />
+            <input type="button" value="-" onclick="data(this.value)" />
+            <input type="button" value="9" onclick="data(this.value)" />
+            <input type="button" value="8" onclick="data(this.value)" />
+            <input type="button" value="7" onclick="data(this.value)" />
+            <input type="button" value="*" onclick="data(this.value)" />
+            <input type="button" value="6" onclick="data(this.value)" />
+            <input type="button" value="5" onclick="data(this.value)" />
+            <input type="button" value="4" onclick="data(this.value)" />
+            <input type="button" value="/" onclick="data(this.value)" />
+            <input type="button" value="3" onclick="data(this.value)" />
+            <input type="button" value="2" onclick="data(this.value)" />
+            <input type="button" value="1" onclick="data(this.value)" />
+            <input type="button" value="+" onclick="data(this.value)" />
+            <input type="button" value="0" onclick="data(this.value)" />
+            <input type="button" value="." onclick="data(this.value)" />
+            <input type="button" value="=" onclick="equal()" />
+            <div style="clear: both"></div>
+        </form>
+    </body>
+</html>
