@@ -11,7 +11,7 @@ export interface IProductItemProps {
 function ProductItem({ image, title, price }: IProductItemProps) {
   return (
     <div className="shadow-md rounded-lg">
-      {/* Image */}
+   
       <div className="h-48 relative">
         <Image
           src={image}
