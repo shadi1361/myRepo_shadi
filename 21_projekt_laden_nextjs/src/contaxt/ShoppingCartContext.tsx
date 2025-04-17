@@ -15,6 +15,7 @@ type TShoppingCartContext = {
   handleIncreaseProductQty: (id:number)=> void;
   getProductQty: (id:number)=>number;
   cartTotalQty: number;
+  handleDecreaseProductQty:(id:number)=>void;
 };
 const ShoppingCartContext = createContext({} as TShoppingCartContext);
 export const useShoppingCartContext = () => {
@@ -27,23 +28,22 @@ export function ShoppingCartContextProvider({
 }: ShoppingCartContextProviderProps) {
   const [cartItems, setCartItems] = useState<CartItems[]>([]);
 
-
-const cartTotalQty= cartItems.reduce((totalQty,item)=>{
-  return totalQty+item.qty
-}, 0)
+  const cartTotalQty= cartItems.reduce((totalQty,item)=>{
+    return totalQty+item.qty
+  }, 0)
 
   const getProductQty = (id: number) => {
     return cartItems.find((item) => item.id == id)?.qty || 0;
   };
 
   const handleIncreaseProductQty = (id: number) => {
-    setCartItems((currentItem) => {
-      const isNotProductExist = currentItem.find((item) => item.id == id) == null;
+    setCartItems((currentItems) => {
+      const isNotProductExist = currentItems.find((item) => item.id == id) == null;
 
       if (isNotProductExist) {
-        return [...currentItem, { id: id, qty: 1 }]; //then add a new one to the cart.
+        return [...currentItems, { id: id, qty: 1 }]; //then add a new one to the cart.
       } else {
-        return currentItem.map((item) => {
+        return currentItems.map((item) => {
           if (item.id == id) {
             //if product already exists in the cart:
             return {
@@ -59,9 +59,30 @@ const cartTotalQty= cartItems.reduce((totalQty,item)=>{
     });
   };
 
+  const handleDecreaseProductQty = (id: number) => {
+    setCartItems((currentItems) => {
+      const isLastOne = currentItems.find((item) => item.id == id)?.qty === 1; // Fixed syntax and added optional chaining
+  
+      if (isLastOne) {
+        return currentItems.filter((item) => item.id != id); // Remove the item if it's the last one
+      } else {
+        return currentItems.map((item) => {
+          if (item.id == id) {
+            return {
+              ...item,
+              qty: item.qty - 1, // Decrease the quantity
+            };
+          } else {
+            return item; // Return other items unchanged
+          }
+        });
+      }
+    });
+  };
+
   return (
     <ShoppingCartContext.Provider
-     value={{ cartItems,handleIncreaseProductQty, getProductQty,cartTotalQty }}>
+     value={{ cartItems,handleIncreaseProductQty, getProductQty,cartTotalQty,handleDecreaseProductQty }}>
       {children}
     </ShoppingCartContext.Provider>
   );
