@@ -1,6 +1,7 @@
 import AddToCart from "@/components/AddToCart";
 import Container from "@/components/Container";
 import { IProductItemProps } from "@/components/ProductItem";
+import { formatNumberWithCommas } from "@/utilities/number";
 import Image from "next/image";
 import React from "react";
 
@@ -24,7 +25,7 @@ async function Product({ params }: IProductProps) {
           <p className="text-gray-700 mb-4">{data.description}</p>
 
           <p className="font-bold">
-            قیمت :<span>{data.price}$</span>
+            قیمت :<span>{formatNumberWithCommas(data.price ?? 0)}$</span>
           </p>
 
           <AddToCart id={id} />

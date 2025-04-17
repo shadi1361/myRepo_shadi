@@ -3,6 +3,7 @@ import ProductItem, { IProductItemProps } from "@/components/ProductItem";
 import Link from "next/link";
 import React from "react";
 
+
 async function Store() {
   const result = await fetch("http://localhost:3004/products");
   const data = (await result.json()) as IProductItemProps[];
@@ -15,6 +16,7 @@ async function Store() {
         {data.map((item) => (
           <Link href={`/store/${item.id}`} key={item.id}>
             <ProductItem key={item.id} {...item} />
+   
           </Link>
         ))}
       </div>

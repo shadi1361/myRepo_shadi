@@ -1,3 +1,4 @@
+import { formatNumberWithCommas } from "@/utilities/number";
 import Image from "next/image";
 
 export interface IProductItemProps {
@@ -11,22 +12,21 @@ export interface IProductItemProps {
 function ProductItem({ image, title, price }: IProductItemProps) {
   return (
     <div className="shadow-md rounded-lg">
-   
       <div className="h-48 relative">
         <Image
           src={image}
-          alt={title} //as title 
+          alt={title} // as title
           layout="fill"
           objectFit="cover"
           className="rounded-t-lg"
         />
       </div>
 
-      {/* Detail for Products*/}
+      {/* Detail for Products */}
       <div className="p-4">
         <h3 className="font-bold text-lg">{title}</h3>
         <p className="text-gray-700">
-          قیمت : <span className="font-semibold">{price}$</span>
+          قیمت: <span>{formatNumberWithCommas(price)}$</span>
         </p>
       </div>
     </div>
