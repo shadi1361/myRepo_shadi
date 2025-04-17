@@ -1,6 +1,8 @@
 "use client";
 
-import { useShoppingCartContext } from "@/contaxt/ShoppingCartContext";
+import {
+  useShoppingCartContext,
+} from "@/contaxt/ShoppingCartContext";
 
 interface IAddToCartProps {
   id: string;
@@ -11,23 +13,36 @@ function AddToCart({ id }: IAddToCartProps) {
     cartItems,
     handleIncreaseProductQty,
     getProductQty,
-    handleDecreaseProductQty
+    handleDecreaseProductQty,
+    handleRemoveProduct,
   } = useShoppingCartContext();
   console.log(cartItems);
+
   return (
-    <div className="mt-4">
+    <div>
+      <div className="mt-4">
+        <button
+          onClick={() => handleDecreaseProductQty(parseInt(id))}
+          className="px-4 py-2 rounded bg-sky-500 text-white"
+        >
+          -
+        </button>
+
+        <span className="mx-4">{getProductQty(parseInt(id))} </span>
+
+        <button
+          onClick={() => handleIncreaseProductQty(parseInt(id))}
+          className="px-4 py-2 rounded bg-sky-500 text-white"
+        >
+          +
+        </button>
+      </div>
+
       <button
-        onClick={() => handleIncreaseProductQty(parseInt(id))}
-        className="px-4 py-2 rounded bg-sky-500 text-white"
+        onClick={() => handleRemoveProduct(parseInt(id))}
+        className="bg-orange-500 text-white rounded px-9 py-2 mt-2"
       >
-        +
-      </button>
-      <span className="mx-4">{getProductQty(parseInt(id))} </span>
-      <button
-        onClick={() => handleDecreaseProductQty(parseInt(id))}
-        className="px-4 py-2 rounded bg-sky-500 text-white"
-      >
-        -
+        Löschen
       </button>
     </div>
   );
