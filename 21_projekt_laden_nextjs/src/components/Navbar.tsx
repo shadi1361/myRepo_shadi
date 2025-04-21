@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { redirect, usePathname } from "next/navigation";
 import React from "react";
 import Container from "./Container";
 import { useShoppingCartContext } from "@/contaxt/ShoppingCartContext";
+import Cookies from "js-cookie"
 
 function Navbar() {
   const pathname = usePathname();
@@ -21,6 +22,10 @@ function Navbar() {
     {
       href: "/dashboard",
       title: " داشبورد "
+    },
+    {
+      href: "/login",
+      title: " ورود "
     }
   ];
 
@@ -44,6 +49,10 @@ function Navbar() {
           <div>
             <span className="px-2 py-1 bg-orange-400 text-white rounded-full">{cartTotalQty}</span>
             <Link href="/cart" >سبد خرید</Link>
+            <button onClick={()=>{
+              Cookies.remove("token");
+              redirect("/")
+            }} className="ml-5 text-red-600">خروج</button>
           </div>
         </div>
       </Container>

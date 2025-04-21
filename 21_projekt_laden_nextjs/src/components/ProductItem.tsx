@@ -41,7 +41,7 @@ function ProductItem({ image, title, price }: IProductItemProps) {
         )}
       </div>
 
-      {/* Details für Produkte */}
+      {/* Details zur Produkte */}
       <div className="p-4">
         <h3 className="font-bold text-lg">{title}</h3>
         <p className="text-gray-700">
