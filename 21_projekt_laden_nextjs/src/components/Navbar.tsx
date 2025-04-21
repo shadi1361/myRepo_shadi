@@ -17,6 +17,10 @@ function Navbar() {
     {
       href: "/store",
       title: " فروشگاه "
+    },
+    {
+      href: "/dashboard",
+      title: " داشبورد "
     }
   ];
 

@@ -1,7 +1,10 @@
 import React from "react";
 import Container from "@/components/Container";
-import Pagination from "@/components/Pagination";
-import ProductItem, { IProductItemProps, IProductList } from "@/components/ProductItem";
+// import Pagination from "@/components/Pagination";
+import ProductItem, {
+  IProductItemProps,
+  IProductList
+} from "@/components/ProductItem";
 import Search from "@/components/Search";
 import Link from "next/link";
 
@@ -31,7 +34,8 @@ async function Store({ searchParams }: IStoreProps) {
           </Link>
         ))}
       </div>
-      <Pagination pageCount={data.pages} />
+
+      {/* <Pagination pageCount={data.pages} /> */}
     </Container>
   );
 }
