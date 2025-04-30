@@ -34,83 +34,26 @@
       "title": "محصول پنج",
       "description": "dkjfjksgjkdsjkg sdfksdjg sgldsg lsd glsdgjd gld",
       "price": 350
-    },
-    {
+    },    {
       "id": "6",
-      "image": "https://imgv3.fotor.com/images/blog-cover-image/AI-painting-generator-banner.png",
+      "image": "https://bestinau.com.au/wp-content/uploads/2019/01/free-images-696x464.jpg",
       "title": "محصول شش",
       "description": "dkjfjksgjkdsjkg sdfksdjg sgldsg lsd glsdgjd gld",
-      "price": 500
+      "price": 200
     },
     {
       "id": "7",
-      "image": "https://bestinau.com.au/wp-content/uploads/2019/01/free-images-696x464.jpg",
+      "image": "https://miro.medium.com/v2/resize:fit:660/1*IrTgE4XTR09pSjOH_jLwUQ.png",
       "title": "محصول هفت",
-      "description": "dkjfjksgjkdsjkg sdfksdjg sgldsg lsd glsdgjd gld",
-      "price": 200
+      "description": "dkjfjksgjkdsjkg sdfksdjg sgldsg lsd g dsgdfhfghlsdgjd gld",
+      "price": 150
     },
     {
       "id": "8",
       "image": "https://miro.medium.com/v2/resize:fit:660/1*IrTgE4XTR09pSjOH_jLwUQ.png",
       "title": "محصول هشت",
-      "description": "dkjfjksgjkdsjkg sdfksdjg sgldsg lsd g dsgdfhfghlsdgjd gld",
-      "price": 150
-    },
-    {
-      "id": "9",
-      "image": "https://bestinau.com.au/wp-content/uploads/2019/01/free-images-696x464.jpg",
-      "title": "محصول نه",
       "description": "dkjfjksgjkdsjkg sdfksdjg sgldsg lsd glsdgjd gld",
-      "price": 200
-    },
-    {
-      "id": "10",
-      "image": "https://miro.medium.com/v2/resize:fit:660/1*IrTgE4XTR09pSjOH_jLwUQ.png",
-      "title": "محصول ده",
-      "description": "dkjfjksgjkdsjkg sdfksdjg sgldsg lsd g dsgdfhfghlsdgjd gld",
-      "price": 150
-    },
-    {
-      "id": "689",
-      "image": "https://newsmedia.tasnimnews.com/Tasnim/Uploaded/Image/1402/03/18/1402031814224368127735594.jpg",
-      "title": "محصول دو ",
-      "description": "",
-      "price": "31214"
-    },
-    {
-      "id": "249",
-      "image": "https://newsmedia.tasnimnews.com/Tasnim/Uploaded/Image/1402/03/18/1402031814224368127735594.jpg",
-      "title": "askfjk",
-      "description": "",
-      "price": "400"
-    },
-    {
-      "id": "431",
-      "image": "https://www.powertrafic.fr/wp-content/uploads/2023/04/image-ia-exemple.png",
-      "title": "xbcbvc",
-      "description": "",
-      "price": "35454"
-    },
-    {
-      "id": "95",
-      "image": "https://www.powertrafic.fr/wp-content/uploads/2023/04/image-ia-exemple.png",
-      "title": "cxyvxcv",
-      "description": "",
-      "price": "456"
-    },
-    {
-      "id": "570",
-      "image": "",
-      "title": "sgfd",
-      "description": "",
-      "price": "3445"
-    },
-    {
-      "id": "239",
-      "image": "",
-      "title": "sgfd",
-      "description": "",
-      "price": "3445"
+      "price": 350
     }
   ],
   "discounts": [

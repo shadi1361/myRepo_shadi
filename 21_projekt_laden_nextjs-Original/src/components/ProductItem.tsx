@@ -1,5 +1,4 @@
 "use client";
-
 import { formatNumberWithCommas } from "@/utilities/number";
 import Image from "next/image";
 
@@ -9,17 +8,7 @@ export interface IProductItemProps {
   title: string;
   description: string;
   price: number;
-}
-
-export interface IProductList {
-  first: number | null;
-  items: number | null;
-  last: number | null;
-  next: number | null;
-  pages: number;
-  prev: number | null;
-  data: IProductItemProps[];
-}
+  }
 
 function ProductItem({ image, title, price }: IProductItemProps) {
   return (
@@ -44,7 +33,7 @@ function ProductItem({ image, title, price }: IProductItemProps) {
       {/* Details zur Produkte */}
       <div className="p-4">
         <h3 className="font-bold text-lg">{title}</h3>
-        <p className="text-gray-700">
+        <p className="text-grey-400">
           Preis: <span>{formatNumberWithCommas(price)}$</span>
         </p>
       </div>

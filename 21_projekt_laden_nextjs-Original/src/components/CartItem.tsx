@@ -11,7 +11,7 @@ interface ICartItemProps {
 }
 
 function CartItem({ id, qty }: ICartItemProps) {
-  const [data, setData] = useState({} as IProductItemProps);
+  const [data, setData] = useState<IProductItemProps | null>(null);
 
   useEffect(() => {
     // Daten des Produkts anhand der ID abrufen
@@ -22,22 +22,28 @@ function CartItem({ id, qty }: ICartItemProps) {
   }, [id]); // 'id' zur Abhängigkeitsliste hinzugefügt
 
   return (
-    <div className="grid grid-cols-12 bg-slate-100 mb-4 ">
-      <Image
-        className="col-span-3 mt-4 ml-3 rounded-md"
-        src={data.image} // Bild des Produkts
-        alt={data.title} // Titel des Produkts
-        width={200}
-        height={200}
-      />
+    <div className="grid grid-cols-12 bg-slate-100 mb-4">
+      {data?.image ? (
+        <Image
+          className="col-span-3 mt-4 ml-3 rounded-md"
+          src={data.image} // Bild des Produkts
+          alt={data.title || "Produktbild"} // Titel des Produkts
+          width={200}
+          height={200}
+        />
+      ) : (
+        <div className="col-span-3 mt-4 ml-3 rounded-md bg-gray-200 flex items-center justify-center">
+          <p>Kein Bild verfügbar</p> {/* Platzhaltertext, wenn kein Bild vorhanden ist */}
+        </div>
+      )}
 
       <div className="col-span-7 p-3">
-        <h2 className="text-xl font-bold">{data.title} </h2>
+        <h2 className="text-xl font-bold">{data?.title || "Produktname"}</h2>
         <p>
           تعداد : <span>{qty}</span> {/* Anzahl der Produkte */}
         </p>
         <p>
-          قیمت محصول :<span>{formatNumberWithCommas(data.price ?? 0)}$</span> {/* Preis des Produkts */}
+          قیمت محصول :<span>{formatNumberWithCommas(data?.price ?? 0)}$</span> {/* Preis des Produkts */}
         </p>
 
         <AddToCart id={id.toString()} /> {/* Button zum Warenkorb hinzufügen */}
