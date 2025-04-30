@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "image": "https://miro.medium.com/v2/resize:fit:660/1*IrTgE4XTR09pSjOH_jLwUQ.png",
+      "title": "محصول یک",
+      "description": "dkjfjksgjkdsjkg sdfksdjg sgldsg lsd glsdgjd gld",
+      "price": 350
+    },
+    {
+      "id": "2",
+      "image": "https://imgv3.fotor.com/images/blog-cover-image/AI-painting-generator-banner.png",
+      "title": "محصول دو",
+      "description": "dkjfjksgjkdsjkg sdfksdjg sgldsg lsd glsdgjd gld",
+      "price": 500
+    },
+    {
+      "id": "3",
+      "image": "https://bestinau.com.au/wp-content/uploads/2019/01/free-images-696x464.jpg",
+      "title": "محصول سه",
+      "description": "dkjfjksgjkdsjkg sdfksdjg sgldsg lsd glsdgjd gld",
+      "price": 200
+    },
+    {
+      "id": "4",
+      "image": "https://miro.medium.com/v2/resize:fit:660/1*IrTgE4XTR09pSjOH_jLwUQ.png",
+      "title": "محصول چهار",
+      "description": "dkjfjksgjkdsjkg sdfksdjg sgldsg lsd g dsgdfhfghlsdgjd gld",
+      "price": 150
+    },
+    {
+      "id": "5",
+      "image": "https://miro.medium.com/v2/resize:fit:660/1*IrTgE4XTR09pSjOH_jLwUQ.png",
+      "title": "محصول پنج",
+      "description": "dkjfjksgjkdsjkg sdfksdjg sgldsg lsd glsdgjd gld",
+      "price": 350
+    },    {
+      "id": "6",
+      "image": "https://bestinau.com.au/wp-content/uploads/2019/01/free-images-696x464.jpg",
+      "title": "محصول شش",
+      "description": "dkjfjksgjkdsjkg sdfksdjg sgldsg lsd glsdgjd gld",
+      "price": 200
+    },
+    {
+      "id": "7",
+      "image": "https://miro.medium.com/v2/resize:fit:660/1*IrTgE4XTR09pSjOH_jLwUQ.png",
+      "title": "محصول هفت",
+      "description": "dkjfjksgjkdsjkg sdfksdjg sgldsg lsd g dsgdfhfghlsdgjd gld",
+      "price": 150
+    },
+    {
+      "id": "8",
+      "image": "https://miro.medium.com/v2/resize:fit:660/1*IrTgE4XTR09pSjOH_jLwUQ.png",
+      "title": "محصول هشت",
+      "description": "dkjfjksgjkdsjkg sdfksdjg sgldsg lsd glsdgjd gld",
+      "price": 350
+    }
+  ],
+  "discounts": [
+    {
+      "id": "1",
+      "code": "FroheWeihnachten1",
+      "percentage": 10
+    },
+    {
+      "id": "2",
+      "code": "FroheWeihnachten2",
+      "percentage": 20
+    },
+    {
+      "id": "3",
+      "code": "FroheWeihnachten3",
+      "percentage": 30
+    }
+  ]
+}
