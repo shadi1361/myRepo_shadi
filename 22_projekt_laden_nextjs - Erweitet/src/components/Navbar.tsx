@@ -25,7 +25,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="shadow bg-slate-200">
+    <nav className="shadow bg-slate-200 h-15">
       <Container>
         <div className="flex justify-between items-center h-16">
           {/* Left-aligned navLinks */}
@@ -35,7 +35,7 @@ function Navbar() {
                 key={item.href}
                 href={item.href}
                 className={`flex items-center justify-center px-4 h-full transition 
-                  ${pathname === item.href ? "text-orange-500" : "text-black"} 
+                  ${pathname === item.href ? "text-orange-600" : "text-black"} 
                   hover:bg-white`}
               >
                 {item.title}

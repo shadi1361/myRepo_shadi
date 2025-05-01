@@ -3,6 +3,7 @@
 
 import React from "react";
 import Navbar from "./Navbar";
+import TopNavbar from "./TopNavbar";
 
 interface ILayoutProps {
   children: React.ReactNode;
@@ -11,6 +12,7 @@ interface ILayoutProps {
 function Layout({ children }: ILayoutProps) {
   return (
     <div>
+      <TopNavbar />
       <Navbar />
       {children}
     </div>

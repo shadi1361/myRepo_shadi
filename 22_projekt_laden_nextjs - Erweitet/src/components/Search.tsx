@@ -4,24 +4,32 @@ import { useRouter, useSearchParams } from "next/navigation"
 import { useState } from "react"
 
 function Search() {
-    const searchParams=useSearchParams()
-    const router=useRouter()
-    const [search, setSearch] = useState("")
-    const handleSearch=()=>{
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const [search, setSearch] = useState("");
+  const handleSearch = () => {
+    const currentSearchParams = new URLSearchParams(searchParams.toString());
+    currentSearchParams.set("title", search);
 
-
-const currentSearchParams=new URLSearchParams(searchParams.toString())
-currentSearchParams.set("title", search)
-
-      router.push(`/store?${currentSearchParams.toString()}`)
-    }
+    router.push(`/store?${currentSearchParams.toString()}`);
+  };
 
   return (
-    <div>
-        <input onChange={(e)=>setSearch(e.target.value)} className="bg-slate-400 p-1 rounded w-100" type="text" placeholder="نام کالا را وارد کنید" />
-        <button onClick={handleSearch} className="bg-sky-500 text-white p-1 px-3 ml-3 w-30 rounded">جستجو</button>
+    <div className="flex items-center space-x-2">
+      <input
+        onChange={(e) => setSearch(e.target.value)}
+        className="bg-white p-2 h-12 w-110 mr-1 border border-black box-border rounded"
+        type="text"
+        placeholder="Artikelnummer / Suchbegriffe"
+      />
+      <button
+        onClick={handleSearch}
+        className="bg-black text-white border border-black p-2 h-12 w-30 box-border rounded cursor-pointer"
+      >
+        Suchen
+      </button>
     </div>
-  )
+  );
 }
 
-export default Search
+export default Search;
