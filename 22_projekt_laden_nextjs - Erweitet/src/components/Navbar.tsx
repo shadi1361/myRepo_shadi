@@ -5,6 +5,7 @@ import React from "react";
 import Container from "./Container";
 import { useShoppingCartContext } from "@/contaxt/ShoppingCartContext";
 import Cookies from "js-cookie";
+import { FaShoppingCart } from "react-icons/fa";
 
 function Navbar() {
   const pathname = usePathname();
@@ -53,9 +54,9 @@ function Navbar() {
                   ${pathname === "/cart" ? "text-orange-500" : "text-black"} 
                   hover:bg-white`}
               >
-                Cart
+                <FaShoppingCart className="h-6 w-6 text-orange-400" />
               </Link>
-              <span className="absolute top-1 right-1 bg-orange-400 text-white text-xs rounded-full px-2 py-0.5">
+              <span className="absolute top-1 right-1 bg-sky-400 text-white text-xs rounded-full px-2 py-0.5">
                 {cartTotalQty}
               </span>
             </div>
