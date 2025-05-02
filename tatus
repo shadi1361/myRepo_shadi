@@ -1,0 +1,95 @@
+[33mcommit 1593adda310510737107307bfb55b33ba98c231d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Shadi-Bagheri <bagheri1983goharshad@gmail.com>
+Date:   Wed Apr 30 22:44:34 2025 +0200
+
+    new added
+
+[33mcommit 7a1553aa82856cbb76793f11b8a3dabefa59bcab[m
+Author: Shadi-Bagheri <bagheri1983goharshad@gmail.com>
+Date:   Wed Apr 30 22:37:44 2025 +0200
+
+    new files added
+
+[33mcommit 04c455467badec6f80ac7d1b45e66d32632667d4[m
+Author: Shadi-Bagheri <bagheri1983goharshad@gmail.com>
+Date:   Mon Apr 21 21:37:59 2025 +0200
+
+    Login-Authentifizierung
+
+[33mcommit fa37122572893bedd7239ca9b091cc3b5b5c8fcd[m
+Author: Shadi-Bagheri <bagheri1983goharshad@gmail.com>
+Date:   Mon Apr 21 18:28:58 2025 +0200
+
+    Management Panel
+
+[33mcommit a81739c23bd293e7bdf484566ad55a495f72ad31[m
+Author: Shadi-Bagheri <bagheri1983goharshad@gmail.com>
+Date:   Sun Apr 20 22:13:35 2025 +0200
+
+    Search Knopf erzeugen
+
+[33mcommit f002851ddf185d8d2a9b5d2ea881de7d99e34d78[m
+Author: Shadi-Bagheri <bagheri1983goharshad@gmail.com>
+Date:   Fri Apr 18 16:46:11 2025 +0200
+
+    Im Warenkorb speichern  im localStorage, ohne dass Daten verloren gehen
+
+[33mcommit cd74cdfe3de008bb8928a78f916ce01eb158d8de[m
+Author: Shadi-Bagheri <bagheri1983goharshad@gmail.com>
+Date:   Fri Apr 18 16:00:22 2025 +0200
+
+    Erstellung Rabatt-API Rabattcode
+
+[33mcommit a47cb079001b1bf71064a7dbc134169f4a5a4d6d[m
+Author: Shadi-Bagheri <bagheri1983goharshad@gmail.com>
+Date:   Thu Apr 17 21:08:33 2025 +0200
+
+    Gesamtpreis zum Warenkorb hinzufügen
+
+[33mcommit d055d98d7cb8d254f48a637884d47ce785ed2eb8[m
+Author: Shadi-Bagheri <bagheri1983goharshad@gmail.com>
+Date:   Thu Apr 17 20:02:55 2025 +0200
+
+    Gesamtpreis zum Warenkorb hinzufügen
+
+[33mcommit 9add0b231961e8e3dbe3d20173c9e9c27bd20207[m
+Author: Shadi-Bagheri <bagheri1983goharshad@gmail.com>
+Date:   Thu Apr 17 14:34:02 2025 +0200
+
+    Artikels vom Warenkorb Löschen
+
+[33mcommit 8ddff40aefbc05a6e703044c62729cd90c142ad6[m
+Author: Shadi-Bagheri <bagheri1983goharshad@gmail.com>
+Date:   Thu Apr 17 10:56:34 2025 +0200
+
+    Einen Artikel im Warenkorb reduzieren oder die Anzahl eines Artikels auf null setzen
+
+[33mcommit 16ba49327f035bc78ce42fae16dd4800eff3335d[m
+Author: Shadi-Bagheri <bagheri1983goharshad@gmail.com>
+Date:   Thu Apr 17 10:15:45 2025 +0200
+
+    Update .gitignore file
+
+[33mcommit 593a6cf0f7adf5a6e82ca47f70d5a5ae1801e1ba[m
+Author: Shadi-Bagheri <bagheri1983goharshad@gmail.com>
+Date:   Wed Apr 16 19:57:03 2025 +0200
+
+    Produkt zum Warenkorb hinzufügen und die Gesamtanzahl des Produkts im Warenkorb festlegen
+
+[33mcommit 8a279fa46fe9e2f21a5e868b90b6970734ff2f54[m
+Author: Shadi-Bagheri <bagheri1983goharshad@gmail.com>
+Date:   Tue Apr 15 22:11:23 2025 +0200
+
+    Initial commit without node_modules
+
+[33mcommit 0a0fa99c9899ae43aca1db21a4321b549c1322db[m
+Author: Shadi-Bagheri <bagheri1983goharshad@gmail.com>
+Date:   Tue Apr 15 21:55:53 2025 +0200
+
+    Remove node_modules from tracking and update .gitignore
+
+[33mcommit 89e8aeb8ab1ab1c762fc55ad276979876390e9e5[m
+Author: Goharshad <bagheri1983goharshad@gmail.com>
+Date:   Tue Apr 15 21:13:04 2025 +0200
+
+    Initial commit
