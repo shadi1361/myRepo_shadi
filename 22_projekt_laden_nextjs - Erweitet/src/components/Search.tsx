@@ -18,7 +18,7 @@ function Search() {
     <div className="flex">
       <input
         onChange={(e) => setSearch(e.target.value)}
-        className="bg-white focus:outline-none focus:border-gray-400 p-4 h-12 w-130 border border-gray-400 box-border rounded-l placeholder:text-sm"
+        className="bg-white focus:outline-none focus:border-gray-400 p-4 h-12 w-140 border border-gray-400 ml-auto box-border rounded-l placeholder:text-sm"
         type="text"
         placeholder="Artikelnummer / Suchbegriffe"
       />

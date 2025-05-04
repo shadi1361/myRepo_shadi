@@ -3,26 +3,21 @@ import Container from "@/components/Container";
 import axios from "axios";
 import React, { ChangeEvent, useState } from "react";
 
-
-
-//Erzeugen ein neuer Produkt: **********************************************
 function Dashboard() {
-  const [newProduct, setNewProduct] = useState({ 
-    // Ein Objekt, das beim Klicken des Benutzers auf die folgenden untenstehenden Schaltflächen im Container ausgefüllt werden soll.
+  const [newProduct, setNewProduct] = useState({
     title: "",
     price: "",
     image: "",
-    description: ""
+    description: "",
   });
 
-  // Da sich die untenstehenden Buttons ändern können, muss diese Funktion geschrieben werden:
   const handleChangeProduct = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { value, name } = e.target;
     setNewProduct({
       ...newProduct,
-      [name]: value //Jedes Mal wird einer der folgenden Werte: title, price oder image anstelle von value in [name]: value eingesetzt.
+      [name]: value,
     });
   };
 
@@ -37,14 +32,15 @@ function Dashboard() {
         image: newProduct.image,
         title: newProduct.title,
         description: newProduct.description,
-        price: newProduct.price
-      }
+        price: newProduct.price,
+      },
     });
   };
 
   return (
+    <Container>
     <div className="bg-slate-300 p-4">
-      <Container>
+   
         <div className="grid grid-cols-3 gap-4 bg-slate-100">
           <input
             onChange={handleChangeProduct}
@@ -56,7 +52,7 @@ function Dashboard() {
             onChange={handleChangeProduct}
             name="price"
             type="text"
-            placeholder="قیمت "
+            placeholder="قیمت"
           />
           <input
             onChange={handleChangeProduct}
@@ -67,7 +63,7 @@ function Dashboard() {
         </div>
         <textarea
           onChange={handleChangeProduct}
-          name=""
+          name="description"
           className="w-full mt-4 bg-slate-100"
           placeholder="توضیحات"
         ></textarea>
@@ -77,11 +73,16 @@ function Dashboard() {
         >
           ساخت محصول جدید
         </button>
-      </Container>
       
     </div>
-    //************************************************************************ */
+    </Container>
   );
 }
 
-export default Dashboard;
+export default function Page() {
+  return (
+    <div>
+      <Dashboard />
+    </div>
+  );
+}

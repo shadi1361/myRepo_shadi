@@ -14,6 +14,7 @@ function Navbar() {
   const navLinks = [
     { href: "/", title: "Home" },
     { href: "/store", title: "Store" },
+    { href: "/babyclub", title: "BabyClub" },
     { href: "/dashboard", title: "Dashboard" },
     { href: "/login", title: "Einloggen" }
   ];
@@ -21,7 +22,6 @@ function Navbar() {
   const navRights = [
     { href: "/unternehmen", title: "Unternehmen" },
     { href: "/service", title: "Service" },
-    { href: "/babyclub", title: "BabyClub" },
     { href: "/karriere", title: "Karriere" }
   ];
 

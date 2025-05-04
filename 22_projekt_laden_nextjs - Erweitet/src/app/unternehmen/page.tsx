@@ -1,9 +1,13 @@
-import React from 'react'
 
-function page() {
+import Container from '@/components/Container';
+import React from 'react';
+
+function Page() {
   return (
-    <div>Unternehmen</div>
-  )
+    <Container>
+      <div>Unternehmen</div>
+    </Container>
+  );
 }
 
-export default page
+export default Page;

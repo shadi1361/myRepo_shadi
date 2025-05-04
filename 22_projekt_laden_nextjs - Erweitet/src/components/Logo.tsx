@@ -7,10 +7,10 @@ function Logo() {
     <div className="flex justify-start items-center">
       <Link href="#">
         <Image
-          src="/fotos/my-logo2.png" // Pfad zu Ihrem Logo
+          src="/fotos/my-logo2.png" // Pfad zum Logo
           alt="Mein Logo"
-          width={200} // Breite des Logos
-          height={80} // Höhe des Logos
+          width={200} //Breite des Logos
+          height={80} //Höhe des Logos
         />
       </Link>
     </div>

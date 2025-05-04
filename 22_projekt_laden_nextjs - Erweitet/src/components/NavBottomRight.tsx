@@ -35,7 +35,9 @@ function NavBottomRight() {
   return (
     <nav className="h-15">
       <Container>
-        <div className="flex justify-between items-center h-16 font-thin"> {/* تغییر فونت */}
+        <div
+          className="flex justify-between items-center h-16 font-mono text-sm text-gray-600"
+        >
           {/* Right-aligned navRights */}
           <div className="flex h-full">
             {/* Other Right Items */}
@@ -43,8 +45,8 @@ function NavBottomRight() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`flex flex-col items-center justify-center px-4 h-full transition 
-                  ${pathname === item.href ? "text-orange-500" : "text-black"} 
+                className={`flex flex-col items-center justify-center px-3 max-h-full transition text-gray-600 
+                  ${pathname === item.href ? "text-orange-500" : ""} 
                   hover:text-orange-500 hover:underline`}
               >
                 {/* SVG Icon */}
