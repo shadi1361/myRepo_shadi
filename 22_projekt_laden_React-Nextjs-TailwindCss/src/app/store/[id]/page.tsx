@@ -25,7 +25,7 @@ async function Product({ params }: IProductProps) {
           <p className="text-gray-700 mb-4">{data.description}</p>
 
           <p className="font-bold">
-            قیمت :<span>{formatNumberWithCommas(data.price ?? 0)}$</span>
+            Preis :<span>{formatNumberWithCommas(data.price ?? 0)}$</span>
           </p>
 
           <AddToCart id={id} />
