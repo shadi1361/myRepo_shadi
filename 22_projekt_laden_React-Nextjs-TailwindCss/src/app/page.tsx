@@ -3,23 +3,23 @@ import Container from "@/components/Container";
 import React, { useState } from "react";
 
 const data = Array.from({ length: 20 }, (_, i) => `Item ${i + 1}`); // Beispiel-Daten
-const bottomData = [1, 2, 3, 4, 5]; // داده‌های بخش پایین
+const bottomData = [1, 2, 3, 4, 5]; // Daten für den unteren Bereich
 
-//Part1- Pagination1 :
+//Teil1- Pagination1 :
 function Home() {
-  const [currentPage, setCurrentPage] = useState(0); // صفحه فعلی
-  const itemsPerPage = 1; // تعداد آیتم‌ها در هر صفحه
+  const [currentPage, setCurrentPage] = useState(0); // Aktuelle Seite
+  const itemsPerPage = 1; // Anzahl der Elemente pro Seite
 
-  //1-1 محاسبه آیتم‌های صفحه فعلی
+  //1-1 Berechnung der Elemente der aktuellen Seite
   const startIndex = currentPage * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const currentItems = data.slice(startIndex, endIndex);
 
   return (
     <Container>
-      {/*1 Pagination-Bereich-Top*/}
+      {/*1 Bereich der Seitenzahl-Top*/}
 
-      {/*1-1 Pagination-Top*/}
+      {/*1-1 Seitenzahl-Top*/}
       <div className="grid grid-cols-1 gap-4 py-4 shadow bg-green-200">
         {currentItems.map((item, index) => (
           <div
@@ -30,7 +30,7 @@ function Home() {
           </div>
         ))}
 
-        {/*1-2 Pagination-TopTasten */}
+        {/*1-2 Seitenzahl-Top-Tasten */}
         <div className="flex justify-center mt-4 space-x-2">
           {Array.from(
             { length: Math.ceil(data.length / itemsPerPage) },
@@ -86,7 +86,7 @@ function Home() {
       </div>
 
       {/************************************************************************************************/}
-      {/*3- Pagination-Bereich-Bottom*/}
+      {/*3- Bereich der Seitenzahl-Bottom*/}
       <div className="grid grid-cols-5 shadow bg-purple-700 h-120 gap-5 p-3">
         {bottomData.map((item, index) => (
           <div
@@ -98,7 +98,7 @@ function Home() {
         ))}
       </div>
 
-      {/* Pagination-BottomTasten */}
+      {/* Seitenzahl-Bottom-Tasten */}
       <div className="flex justify-center mt-4 space-x-2">
         {Array.from(
           { length: Math.ceil(data.length / itemsPerPage) },
