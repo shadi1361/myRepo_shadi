@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
-import apiClient from "../services/api-client";
+//hook to fetch genres from the API: 
+
+import useData from "./UseData";
 
 export interface Platform {
   id: number;
@@ -15,31 +16,8 @@ export interface Game {
   metacritic:number;
 }
 
-interface FetchGamesResponse {
-  count: number;
-  results: Game[];
-}
 
-const useGames = () => {
-  const [games, setGames] = useState<Game[]>([]);
-  const [error, setError] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    setIsLoading(true);
-    apiClient
-      .get<FetchGamesResponse>("/games")
-      .then((res) => {
-        setGames(res.data.results)
-        setIsLoading(false)
-      })
-      .catch(err => {
-          setError(err.message)
-          setIsLoading(false) 
-      })
-  }, [])
-
-  return { games, error, isLoading };
-};
-
+const useGames = () => useData<Game>("/games");
+// useData is a custom hook that fetches data from the API and returns the data, error, and loading state.
 export default useGames;
