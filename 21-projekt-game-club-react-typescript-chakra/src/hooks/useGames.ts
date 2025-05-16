@@ -1,5 +1,3 @@
-//hook to fetch genres from the API: 
-
 import useData from "./UseData";
 import { Genre } from "./useGenres";
 
@@ -14,11 +12,15 @@ export interface Game {
   name: string;
   background_image: string;
   parent_platforms: { platform: Platform }[];
-  metacritic:number;
+  metacritic: number;
 }
 
+// استفاده از useData برای گرفتن بازی‌ها با فیلتر ژانر انتخاب‌شده
+const useGames = (selectedGenre: Genre | null) => {
+  return useData<Game>(
+    "/games",
+    { params: { genres: selectedGenre?.id } }
+  );
+};
 
-//Mit selectedGenre greife ich auf die ID eines bestimmten Genres zu, erstelle die Informationen erneut als Query-Parameter in einem Endpunkt und rufe die Daten mit useData ab, um sie anschließend im Grid darzustellen
-// useData is a custom hook that fetches data from the API and returns the data, error, and loading state.
-const useGames = (selectedGenre: Genre|null) => useData<Game>("/games" , {params: {genres:selectedGenre?.id}},[selectedGenre?.id] ); 
 export default useGames;
