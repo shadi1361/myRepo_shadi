@@ -1,7 +1,7 @@
 //GenreList und GameGrid sind zwei Komponenten, die die Hooks useGenres und useGames verwenden
 // um die Genres und Spiele von der API abzurufen und anzuzeigen.
 
-import { HStack, Image, List, ListItem, Text } from "@chakra-ui/react";
+import { HStack, Image, List, ListItem, Spinner, Text } from "@chakra-ui/react";
 import useGenres from "../hooks/useGenres";
 import getCroppedImageUrl from "../services/image-url";
 
@@ -9,7 +9,9 @@ import getCroppedImageUrl from "../services/image-url";
 
 
 export default function GenreList() {
-  const { data } = useGenres();
+  const { data, isLoading, error} = useGenres();
+  if(error) return null;
+  if(isLoading) return <Spinner/>
 
   return (
     <List>
