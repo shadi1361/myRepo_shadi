@@ -4,6 +4,7 @@
 
 import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
+import { AxiosRequestConfig } from "axios";
 
 
 interface FetchResponse<T>{
@@ -11,16 +12,16 @@ interface FetchResponse<T>{
   results: T[];
 }
 
-const useGenres =<T>(endpoint:string)=>{
+const useGenres =<T>(endpoint:string, requestConfig?: AxiosRequestConfig, deps?:any[])=>{
 
 const [data, setGames] = useState<T[]>([]);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
+useEffect(() => {
     setIsLoading(true);
     apiClient
-      .get<FetchResponse<T>>(endpoint)
+      .get<FetchResponse<T>>(endpoint, {...requestConfig})
       .then((res) => {
         setGames(res.data.results)
         setIsLoading(false)
@@ -29,7 +30,7 @@ const [data, setGames] = useState<T[]>([]);
           setError(err.message)
           setIsLoading(false) 
       })
-  }, [endpoint]);
+}, deps ? [...deps] : []);   //Innerhalb der eckigen Klammern muss etwas eingefügt werden, damit der Inhalt des useEffect jedes Mal erneut ausgeführt wird, wenn sich die Variable ändert, und erneut eine Anfrage an den Endpunkt gesendet wird, um die neuen Daten für den Benutzer zurückzugeben.
 
   return { data, error, isLoading };
 
