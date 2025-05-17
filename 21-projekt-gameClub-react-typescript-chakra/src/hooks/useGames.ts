@@ -11,16 +11,18 @@ export interface Game {
   id: number;
   name: string;
   background_image: string;
-  parent_platforms: { platform: Platform }[];
-  metacritic: number;
+  parent_platforms: { platform: Platform }[]
+  metacritic: number
 }
 
-// استفاده از useData برای گرفتن بازی‌ها با فیلتر ژانر انتخاب‌شده
-const useGames = (selectedGenre: Genre | null) => {
-  return useData<Game>(
-    "/games",
-    { params: { genres: selectedGenre?.id } }
-  );
-};
+const useGames = (
+  selectedGenre: Genre | null,
+  selectedPlatform: Platform | null
+) => useData<Game>("/games", {
+  params: {
+    genres: selectedGenre?.id,
+    platforms: selectedPlatform?.id
+  }
+});
 
 export default useGames;
