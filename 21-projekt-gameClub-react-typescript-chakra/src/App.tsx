@@ -11,6 +11,7 @@ import SortSelector from "./components/SortSelector";
 export interface GameQuery {
   genre: Genre | null;
   platform: Platform | null;
+  sortOrder:string;
 }
 
 export default function App() {
@@ -24,7 +25,7 @@ export default function App() {
       }}
       templateColumns={{
         base: "1fr",
-        lg: "200px 1fr"
+        lg: "220px 1fr"
       }}
     >
       {/*Respansive grid areas*/}
@@ -40,14 +41,14 @@ export default function App() {
         </GridItem>
       </Show>
       <GridItem area="main">
-        <HStack spacing={7} mb={5} paddingLeft={3}>
+        <HStack spacing={5} mb={5} paddingLeft={2}>
           <PlatformSelector
             selectedPlatform={gameQuery.platform}
             OnSelectPlatform={(platform) =>
               setGameQuery({ ...gameQuery, platform })
             }
           />
-          <SortSelector />
+          <SortSelector sortOrder={gameQuery.sortOrder} onSelectSortOrder={(sortOrder)=> setGameQuery({...gameQuery , sortOrder})} />
         </HStack>
         <GameGrid gameQuery={gameQuery} />
       </GridItem>
