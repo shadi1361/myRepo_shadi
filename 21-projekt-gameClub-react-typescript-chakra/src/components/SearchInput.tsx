@@ -19,7 +19,7 @@ export default function SearchInput({onSearch}: Props) {
         <InputLeftElement children={<BsSearch />} />
         <Input ref={ref}
           borderRadius={20}
-          placeholder="Search Games..."
+          placeholder="Search 886,397 games..."
           variant="field"
         ></Input>
       </InputGroup>

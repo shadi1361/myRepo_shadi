@@ -6,7 +6,7 @@ interface Props {
 }
 
 export default function GameHeading({ gameQuery }: Props) {
-  const heading = `${gameQuery.platform?.name || ''} ${gameQuery.genre?.name || ''} Games`;
+  const heading = `${gameQuery.platform?.name || ''} ${gameQuery.genre?.name || ''} New and trending`;
 
   return (
     <Heading marginY={5} fontSize="5xl" as="h1">
