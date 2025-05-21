@@ -1,3 +1,4 @@
+import './index.css';   // importing form from index.css with the width of 100%
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
