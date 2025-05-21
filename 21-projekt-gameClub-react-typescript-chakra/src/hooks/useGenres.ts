@@ -1,6 +1,6 @@
 //hook : hooked to the api to get the genres
 
-import useData from "./UseData";
+import genres from "../data/genres"
 
 export interface Genre {
   id: number;
@@ -8,6 +8,6 @@ export interface Genre {
   image_background: string;
 }
 
-const useGenres = () => useData<Genre>("/genres");
+const useGenres = () => ({data:genres, isLoading:false, error:null})
 
 export default useGenres;
